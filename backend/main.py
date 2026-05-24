@@ -5,8 +5,8 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 import os
 
-from .database import init_db
-from .routers import auth, bloodbank, appointments, hospitals, analytics, chatbot
+from database import init_db
+from routers import auth, bloodbank, appointments, hospitals, analytics, chatbot
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 

@@ -9,7 +9,7 @@
     "dev:frontend": "vite",
     "dev:backend": "cd .. && python -m uvicorn backend.main:app --reload",
     "dev:all": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
-    "build": "vite build",
+    "build": "node ./node_modules/vite/bin/vite.js build",
     "preview": "vite preview",
     "clean": "rmdir /s /q dist",
     "lint": "echo No linting for JS"

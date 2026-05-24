@@ -4,9 +4,9 @@ import os
 import uuid
 from pathlib import Path
 
-from ..database import get_db_connection
-from ..core.security import decode_token, create_access_token, verify_password, get_password_hash
-from ..schemas import UserLogin, UserCreate, Token, UserUpdate
+from database import get_db_connection
+from core.security import decode_token, create_access_token, verify_password, get_password_hash
+from schemas import UserLogin, UserCreate, Token, UserUpdate
 
 router = APIRouter()
 security = HTTPBearer()

@@ -10,7 +10,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 from fastapi.responses import StreamingResponse
 
 from database import get_db_connection
-from auth import get_current_user, ADMIN_ROLES
+from routers.auth import get_current_user, ADMIN_ROLES
 from schemas import RecommendationRequest, RecommendationSettings, RecommendationEmailRequest
 
 router = APIRouter()

@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 import unicodedata
 
 from database import get_db_connection
-from auth import get_current_user
+from routers.auth import get_current_user
 
 router = APIRouter()
 
